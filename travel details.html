@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>travel details</title>
+	<link rel="stylesheet" type="text/css" href=".\traveld.css">
+	<script src=".\build\react.js"></script>
+	<script src=".\build\react-dom.js"></script>
+	<script src=".\build\browser.min.js"></script>
+	<script src=".\build\JSXTransformer.js"></script>
+	
+</head>
+<body>
+	<div id="content">
+		<div class="pics">
+			<img src="./pic1.png">
+			<img src="./pic2.png">
+			<img src="./pic3.png">
+			<img src="./pic4.png" class="lastpic">
+		</div><!-- pics -->
+		<div class="intro">
+			<div id="portrait">
+				<img src="./pic1.png">
+			</div>
+			<div id="NameDate">
+				<p class="name">岩岩</p>
+				<p class="date">2016-03-18</p>
+			</div>
+			<div id="place">
+				<img src="./didian.png">
+				<p>文津国际公寓</p>
+			</div>
+			<div id="words">
+				<p>如果我成了只有一片树叶的力量，那我想做一只冲着天空的那一片，向着阳光，向着天空！</p>
+			</div>
+		</div>
+		<div class="comments">
+			<div id="display">
+				<div class="left" id="left">
+
+				</div>
+				<div class="middle"></div>
+				<div class="right" id="right">
+					
+				</div>
+			</div>
+			<div class="interval"></div>
+
+			<div id="peoplec">
+				<div class="row1">
+					<p class="pname">雪玩子</p>
+					<p class="cwords">灰白色衬衣 显得好爱干净啊</p>
+				</div>
+				<div class="row2">
+					<p class="pname">超级玛利吖</p>
+					<p class="cwords">果然是真的</p>
+				</div>
+				<div class="row3" id="lastc"> 
+					<p class="pname">冒冒安</p>
+					<p class="cwords">她那眼神好温柔</p>
+				</div>
+			</div>
+
+			<div class="interval"></div>
+	
+		</div><!-- comments -->
+		<div class="footer">
+			<div class="fpicture">
+				<img src="./pic1.png">
+			</div>
+			<div class="fname"><p>岩岩</p></div>
+			<div class="fwords">
+				<p>我在达客旅行发布了186张旅途</p>
+				<p>经常约伙伴们一起旅行，并记录旅行、玩乐</p>
+				<p>邀请您也来记录和分享</p>
+			</div>
+			<div class="button" id="button"></div>
+		</div><!-- footer -->
+
+		<div class="mask" id="mask">
+			
+		</div><!-- mask -->
+		
+	</div><!-- content -->
+
+
+
+	<script type="text/babel">
+		
+		var PingLunT = React.createClass({
+			handleClick: function(event){
+				alert("点击评论跳转");
+			},
+			render: function(){
+				return(
+					<div id="pinglun" onClick={this.handleClick}>
+					    <img src="./pinglun.png"/>
+					    <p>23</p>
+					</div>
+				);
+			}
+		});
+		ReactDOM.render(
+			<PingLunT/>,
+			document.getElementById('left')
+		); {/* 点击评论跳转到appstore */}
+
+
+		var ZanT = React.createClass({
+			handleClick: function(event){
+				alert("点击赞跳转");
+			},
+			render: function(){
+				return(
+					<div id="zan" onClick={this.handleClick}>
+					    <img src="./zan.png"/>
+					    <p>68</p>
+					</div>
+				);
+			}
+		});
+		ReactDOM.render(
+			<ZanT/>,
+			document.getElementById('right')
+		);  {/* 点击赞跳转到appstore */}
+
+
+		var ButtonT = React.createClass({
+			handleClick: function(event){
+				alert("点击button跳转");
+			},
+			render: function(){
+				return(
+					<div className="button" id="button" onClick={this.handleClick}>打开App查看并关注Ta</div>
+				);
+			}
+		});
+		ReactDOM.render(
+			<ButtonT/>,
+			document.getElementById('button')
+		);
+
+
+		var MaskT = React.createClass({
+			handleClick: function(event){
+				alert("点击mask跳转");
+			},
+			render: function(){
+				return(
+					<div className="tip" onClick={this.handleClick}>
+						<div className="logo">
+							<img src="./logo.png"/>
+						</div>
+						<div className="logoname">
+							<p className="p1">达客旅行</p>
+							<p className="p2">国内第一旅游约伴平台</p>
+						</div>
+						<div className="open">立即打开</div>
+					</div>
+				);
+			}
+		});
+		ReactDOM.render(
+			<MaskT/>,
+			document.getElementById('mask')
+		);  {/* 点击mask跳转到appstore */}
+	</script>
+
+</body>
+</html>

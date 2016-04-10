@@ -1,0 +1,262 @@
+body{
+	margin: 0px;
+	font-family: Microsoft YaHei;
+}
+#content{
+	width: 100%;
+	min-width: 750px;
+}
+.pics{
+	width: 100%;
+}
+.pics img{
+	width: 100%;
+	margin-bottom: 10px;
+}
+.pics .lastpic{
+	margin-bottom: 0px;
+}
+.intro{
+	background-color: white;
+	width: 100%;
+	height: 270px;
+	border-bottom: 1px solid #e8e4dd;
+	position: relative;
+}
+.intro #portrait{
+	width: 100px;
+	height: 100px;
+	border-radius: 50px 50px 50px 50px;
+	border:5px solid white;
+	position: absolute;
+	left: 24px;
+	top: -16px;
+}
+.intro #portrait img{
+	width: 100px;
+	height: 100px;
+	border-radius: 50px 50px 50px 50px;
+}
+.intro #NameDate{
+	width: 200px;
+	position: absolute;
+	top: 4px;
+	left: 160px;
+}
+.intro #NameDate p{
+	margin: 1px;
+}
+.intro .name{
+	font-size: 40px;
+	color: #2c2a28;
+}
+.intro .date{
+	font-size: 28px;
+	color: #aba7a2;
+}
+.intro #place{
+	position: absolute;
+	top: 16px;
+	right: 44px;
+}
+.intro #place img{
+
+}
+.intro #place p{
+	font-size: 28px;
+	color: #7d7975;
+	display: inline-block;
+	margin: 0px 0px 0px 10px;
+}
+.intro #words{
+	position: absolute;
+	top: 123px;
+	left: 24px;
+	right: 24px;
+}
+.intro #words p{
+	margin: 0px;
+	font-size: 40px;
+	color: #2c2a28;
+	line-height: 56px;
+}
+.comments{
+	width: 100%;
+	background-color: #f7f7f5;
+}
+.comments #display{
+	width: 100%;
+	height: 100px;
+	background-color: white;
+}
+.comments #display .left{
+	width: 48%;
+	height: 100px;
+	float: left;
+	position: relative;
+}
+.comments #display .left #pinglun p{
+	display: inline-block;
+	margin: 0px 0px 0px 14px;
+	font-size: 40px;
+	color: #7d7975;
+}
+.comments #display .left #pinglun{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+}
+.comments #display .middle{
+	width: 1px;
+	background-color: #e8e4dd;
+	height: 40px;
+	float: left;
+	margin-top: 25px;
+}
+.comments #display .right{
+	width: 48%;
+	height: 100px;
+	float: left;
+	position: relative;
+}
+.comments #display .right #zan{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+}
+.comments #display .right #zan p{
+	display: inline-block;
+	margin: 0px 0px 0px 14px;
+	font-size: 40px;
+	color: #7d7975;
+}
+.comments .interval{
+	width: 100%;
+	height: 24px;
+	background-color: #f7f7f5;
+}
+.comments #peoplec{
+	width: 100%;
+	background-color: white;
+}
+.comments #peoplec [class*='row']{
+	width: 90%;
+	height: 157px;
+	border-bottom: 1px solid #e8e4dd;
+	margin: 0px auto;
+}
+.comments #peoplec .pname{
+	position: absolute;
+	font-size: 30px;
+	color: #aba7a2;
+	margin-top: 33px;
+	margin-bottom: 0px;
+}
+.comments #peoplec .cwords{
+	position: absolute;
+	font-size: 35px;
+	color: #2c2a28;
+	margin-top: 81px;
+	margin-bottom: 30px;
+}
+.comments #peoplec #lastc{
+	border-bottom: none;
+}
+.footer{
+	width: 100%;
+	background-color: #ffffff;
+}
+.footer .fpicture{
+	width: 130px;
+	height: 130px;
+	border-radius: 65px 65px 65px 65px;
+	margin: 30px auto 10px;
+}
+
+.footer .fpicture img{
+	width: 130px;
+	height: 130px;
+	border-radius: 65px 65px 65px 65px;
+}
+.footer .fname{
+	margin-left: 50%;
+	transform: translateX(-50%);
+	text-align: center;
+} 
+.footer .fname p{
+	font-size: 44px;
+	color: #2c2a28;
+	margin:0px;
+}
+.footer .fwords{
+	text-align: center;
+	font-size: 33px;
+	color: #7d7975;
+	line-height: 17px;
+	margin: 20px auto 40px;
+}
+.footer .button{
+	border-radius: 5px;
+	background-color: #fedd00;
+	width: 624px;
+	height: 96px;
+	line-height: 86px;
+	text-align: center;
+	font-size: 40px;
+	color:#7f4802;
+	margin-left: 50%;
+	transform: translateX(-50%);
+	margin-bottom: 235px;
+}
+.mask{
+	width: 100%;
+	height: 180px;
+	background-color: black;
+	opacity: 0.8;
+	position: fixed;
+	bottom: 0px;
+}
+.mask .tip{
+	width: 100%;
+	height: 180px;
+}
+.mask .tip .logo{
+	float: left;
+	margin-left: 30px;
+	margin-top: 40px;
+}
+.mask .tip .logo img{
+	width: 100px;
+	height: 100px;
+}
+.mask .tip .logoname{
+	float: left;
+	margin-top: 43px;
+	margin-left: 44px;
+}
+.mask .tip .logoname p{
+	color: #ffffff;
+	margin: 0px;
+}
+.mask .tip .logoname .p1{
+	font-size: 36px;
+}
+.mask .tip .logoname .p2{
+	font-size: 32px;
+	margin-top: 9px;
+}
+.mask .tip .open{
+	float: right;
+	border-radius: 5px;
+	background-color: #73b037;
+	width: 213px;
+	height: 78px;
+	line-height: 78px;
+	text-align: center;
+	font-size: 30px;
+	color:#ffffff;
+	margin-top: 46px;
+	margin-right: 44px;
+}
